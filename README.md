@@ -2,8 +2,12 @@
 
 In this proof of concept I use Django's command line utility `django-admin` to set up a boilerplate Documentation: https://www.djangoproject.com/start/
 
+---
+*Caution: Usinga Django development server, for convenience and ease.*
 
+> **Note:** Don’t use this server in anything resembling a production environment. It’s intended only for use while developing.
 
+> **Database:** Using sqlLite since its included with Python, when starting a real project you may want to use a more scalable database such as PostgreSQl
 
 ### File Structure:
 
@@ -17,7 +21,9 @@ mysite /
         asgi.py
         wsgi.py
 ```
-### These files are:
+
+<details>
+<summary>More details</summary>
 
 - The outer `mysite/` root directory is a container for your project. 
 
@@ -35,4 +41,6 @@ mysite /
 - `mysite/asgi.py`: An entry-point for ASGI-compatible web servers to serve your project. 
 
 - `mysite/wsgi.py`: An entry-point for WSGI-compatible web servers to serve your project. 
+</details>
 
+---
